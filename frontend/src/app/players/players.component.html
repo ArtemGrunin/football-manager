@@ -1,0 +1,60 @@
+<div class="pagination-buttons">
+  <button (click)="previousPage()">Previous</button>
+  <button (click)="nextPage()">Next</button>
+</div>
+<a [routerLink]="'/teams'">All Teams</a>
+
+<h2>All players</h2>
+
+<div class="table-container">
+  <table>
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Career start date</th>
+      <th>Experience, months</th>
+      <th>Age</th>
+      <th>Team</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let player of players">
+      <td>{{ player.id }}</td>
+      <td><a [routerLink]="['/players', player.id]">{{ player.firstName }}</a></td>
+      <td><a [routerLink]="['/players', player.id]">{{ player.lastName }}</a></td>
+      <td>{{ player.careerStartDate }}</td>
+      <td>{{ player.experienceMonths }}</td>
+      <td>{{ player.age }}</td>
+      <td>{{ player.teamId ? getTeamName(player.teamId) : '' }}</td>
+      <td>
+        <button class="delete-button" (click)="deletePlayer(player)">
+          <fa-icon [icon]="faTimes"></fa-icon>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Add new player</h2>
+
+<div class="form-container">
+  <div>First Name</div>
+  <input placeholder="firstName" [(ngModel)]="newPlayer.firstName">
+  <div>Last Name</div>
+  <input placeholder="lastName" [(ngModel)]="newPlayer.lastName">
+  <div>Career Start Date</div>
+  <input placeholder="careerStartDate" [(ngModel)]="newPlayer.careerStartDate" type="date">
+  <div>Experience, months</div>
+  <input placeholder="experienceMonths" [(ngModel)]="newPlayer.experienceMonths" type="number">
+  <div>Age</div>
+  <input placeholder="age" [(ngModel)]="newPlayer.age" type="number">
+  <div>Team</div>
+  <select [(ngModel)]="newPlayer.teamId">
+    <option *ngFor="let team of teams" [value]="team.id">{{ team.name }}</option>
+  </select>
+  <button class="grid-end" (click)="addPlayer()">Add Player</button>
+</div>

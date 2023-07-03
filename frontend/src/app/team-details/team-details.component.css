@@ -1,0 +1,61 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.team-details {
+  margin-right: 20px;
+}
+
+.details-table {
+  table-layout: auto;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.details-table th,
+.details-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.details-table th {
+  background-color: #f2f2f2;
+}
+
+.players {
+  margin-top: 20px;
+}
+
+.players-table {
+  table-layout: auto;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.players-table th,
+.players-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.players-table th {
+  background-color: #f2f2f2;
+}
+
+.player-name {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+}

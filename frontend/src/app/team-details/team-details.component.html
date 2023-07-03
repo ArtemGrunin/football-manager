@@ -1,0 +1,68 @@
+<a [routerLink]="'/players'">All Players</a><br>
+<a [routerLink]="'/teams'">All Teams</a>
+
+<div class="table-container">
+  <div class="team-details">
+    <h2>Team Details</h2>
+    <div *ngIf="team">
+      <table class="details-table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Budget</th>
+          <th>Transfer Commission</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>{{ team.id }}</td>
+          <td *ngIf="!editMode">{{ team.name }}</td>
+          <td *ngIf="editMode"><input [(ngModel)]="team.name"></td>
+          <td *ngIf="!editMode">{{ team.city }}</td>
+          <td *ngIf="editMode"><input [(ngModel)]="team.city"></td>
+          <td *ngIf="!editMode">{{ team.country }}</td>
+          <td *ngIf="editMode"><input [(ngModel)]="team.country"></td>
+          <td *ngIf="!editMode">{{ team.budget }}</td>
+          <td *ngIf="editMode"><input [(ngModel)]="team.budget" type="number"></td>
+          <td *ngIf="!editMode">{{ team.transferCommission }}</td>
+          <td *ngIf="editMode"><input [(ngModel)]="team.transferCommission" type="number"></td>
+          <td>
+            <button *ngIf="!editMode" (click)="editMode = true">Edit</button>
+            <button *ngIf="editMode" (click)="save()">Save</button>
+            <button *ngIf="editMode" (click)="cancel()">Cancel</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="table-container">
+  <div class="players">
+    <h2>Players:</h2>
+    <div class="table-container">
+      <table class="players-table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let player of players">
+          <td>{{ player.id }}</td>
+          <td>
+            <a [routerLink]="['/players', player.id]"
+               class="player-name">{{ player.firstName }} {{ player.lastName }}</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

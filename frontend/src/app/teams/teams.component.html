@@ -1,0 +1,55 @@
+<div class="pagination-buttons">
+  <button (click)="previousPage()">Previous</button>
+  <button (click)="nextPage()">Next</button>
+</div>
+
+<a [routerLink]="'/players'">All Players</a>
+
+<h2>All teams</h2>
+
+<div class="table-container">
+  <table>
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>Team</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Budget, $</th>
+      <th>Transfer commission, %</th>
+      <th>delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let team of teams">
+      <td>{{ team.id }}</td>
+      <td><a [routerLink]="['/teams', team.id, 'players']">{{ team.name }}</a></td>
+      <td>{{ team.city }}</td>
+      <td>{{ team.country }}</td>
+      <td>{{ team.budget }}</td>
+      <td>{{ team.transferCommission }}</td>
+      <td>
+        <button class="delete-button" (click)="deleteTeam(team)">
+          <fa-icon [icon]="faTimes"></fa-icon>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Add new team</h2>
+
+<div class="form-container">
+  <div>Name</div>
+  <input placeholder="name" [(ngModel)]="newTeam.name">
+  <div>City</div>
+  <input placeholder="city" [(ngModel)]="newTeam.city">
+  <div>Country</div>
+  <input placeholder="country" [(ngModel)]="newTeam.country">
+  <div>Budget</div>
+  <input placeholder="budget" [(ngModel)]="newTeam.budget">
+  <div>Transfer Commission</div>
+  <input placeholder="transferCommission" [(ngModel)]="newTeam.transferCommission">
+  <button class="grid-end" (click)="addTeam()">Add Team</button>
+</div>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="102c6ba0-4c9e-4272-937d-964ab8d13755" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="2RHxpapIH3zrxYk0h7gPhvNo1Ww" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaProjectsEducation/football-manager-app/football-manager-api&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;D:/Programs/nodejs/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\всякие проги\\IntelliJIdeaUltimate\\IntelliJ IDEA 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProjectsEducation\fotball-manager-frontend\src\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProjectsEducation\fotball-manager-frontend\src\app\service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="102c6ba0-4c9e-4272-937d-964ab8d13755" name="Changes" comment="" />
+      <created>1686920999163</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686920999163</updated>
+      <workItem from="1686921002401" duration="1184000" />
+      <workItem from="1687347300981" duration="68726000" />
+      <workItem from="1687786538274" duration="147000" />
+      <workItem from="1687786826530" duration="393000" />
+      <workItem from="1687787255576" duration="10000" />
+      <workItem from="1687787427911" duration="13000" />
+      <workItem from="1687787505330" duration="33000" />
+      <workItem from="1687787749575" duration="47000" />
+      <workItem from="1687787866763" duration="10000" />
+      <workItem from="1687788045285" duration="945000" />
+      <workItem from="1687789119239" duration="1749000" />
+      <workItem from="1687791706334" duration="177000" />
+      <workItem from="1687792143757" duration="2974000" />
+      <workItem from="1687797005807" duration="3564000" />
+      <workItem from="1687871477638" duration="1574000" />
+      <workItem from="1687878625189" duration="55000" />
+      <workItem from="1687886493370" duration="4731000" />
+      <workItem from="1688025821002" duration="7164000" />
+      <workItem from="1688045730377" duration="192000" />
+      <workItem from="1688046052914" duration="2465000" />
+      <workItem from="1688054752569" duration="3823000" />
+      <workItem from="1688111840145" duration="5536000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
