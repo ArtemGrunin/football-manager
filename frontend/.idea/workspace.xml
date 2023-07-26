@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="102c6ba0-4c9e-4272-937d-964ab8d13755" name="Changes" comment="" />
+    <list default="true" id="102c6ba0-4c9e-4272-937d-964ab8d13755" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../football-manager-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../football-manager-api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/dto/request/PlayerRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/dto/request/PlayerRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/dto/request/TeamRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/dto/request/TeamRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/dto/response/PlayerResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/dto/response/PlayerResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/model/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/service/mapper/impl/PlayerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../football-manager-api/src/main/java/ua/com/footballmanagerapp/service/mapper/impl/PlayerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../football-manager-api/src/main/resources/db/changelog/changes/create-table-players.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../football-manager-api/src/main/resources/db/changelog/changes/create-table-players.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/player.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/player.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/player-details/player-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/player-details/player-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/player-details/player-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/player-details/player-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/players/players.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/players/players.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/service/player.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service/player.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/service/team.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/service/team.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +53,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaProjectsEducation/football-manager-app/football-manager-api&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaProjectsEducation/football-manager-app/frontend&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;D:/Programs/nodejs/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
@@ -94,6 +113,8 @@
       <workItem from="1688046052914" duration="2465000" />
       <workItem from="1688054752569" duration="3823000" />
       <workItem from="1688111840145" duration="5536000" />
+      <workItem from="1688972747807" duration="10563000" />
+      <workItem from="1689148708963" duration="425000" />
     </task>
     <servers />
   </component>

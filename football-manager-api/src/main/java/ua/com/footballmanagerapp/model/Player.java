@@ -9,6 +9,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import java.time.LocalDate;
+import java.time.Period;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -26,7 +27,7 @@ public class Player {
     private Long id;
     private String firstName;
     private String lastName;
-    private int age;
+    private LocalDate dateOfBirth;
     private LocalDate careerStartDate;
     private int experienceMonths;
     @EqualsAndHashCode.Exclude
@@ -34,4 +35,12 @@ public class Player {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "team_id")
     private Team team;
+
+    public int getAge() {
+        if (dateOfBirth != null) {
+            return Period.between(dateOfBirth, LocalDate.now()).getYears();
+        } else {
+            return 0;
+        }
+    }
 }

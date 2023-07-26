@@ -15,7 +15,7 @@ This project is a web application for managing a football club. It's developed u
 - Display a list of all players with basic information about each one (name, surname, career start date, team, etc.) with the ability to add/delete players.
 - Navigate to a page with detailed information about a team and its players (with the ability to navigate to a player's page), ability to edit team data.
 - Navigate to a page with detailed information about a player, ability to edit player data, and conduct a transfer operation, navigate to the player's team page.
-
+- [Frontend video presentation](https://www.youtube.com/watch?v=oSjX5ANDD2Q)
 ## How to Run
 
 To launch this project you need to install Docker Desktop and register on DockerHub.

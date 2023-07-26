@@ -27,13 +27,12 @@
       <td *ngIf="editMode"><input [(ngModel)]="editedCareerStartDate" type="date"></td>
       <td *ngIf="!editMode">{{ player.experienceMonths }}</td>
       <td *ngIf="editMode"><input [(ngModel)]="player.experienceMonths"></td>
-      <td *ngIf="!editMode">{{ player.age }}</td>
-      <td *ngIf="editMode"><input [(ngModel)]="player.age"></td>
+      <td>{{ player.age }}</td> 
       <td *ngIf="!editMode">
         <a *ngIf="player.teamId" [routerLink]="['/teams', player.teamId, 'players']">
           {{ getTeamName(player.teamId) }}
         </a>
-      <span *ngIf="!player.teamId">
+        <span *ngIf="!player.teamId">
           Unknown
         </span>
       </td>

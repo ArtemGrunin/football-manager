@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 public class PlayerRequestDto {
     private String firstName;
     private String lastName;
+    private LocalDate dateOfBirth;
     private LocalDate careerStartDate;
     private int experienceMonths;
-    private int age;
     private Long teamId;
 }

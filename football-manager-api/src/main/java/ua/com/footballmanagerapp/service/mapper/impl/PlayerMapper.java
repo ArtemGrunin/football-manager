@@ -13,7 +13,6 @@ import ua.com.footballmanagerapp.service.mapper.ResponseDtoMapper;
 @Component
 public class PlayerMapper implements RequestDtoMapper<PlayerRequestDto, Player>,
         ResponseDtoMapper<PlayerResponseDto, Player> {
-
     private final TeamService teamService;
 
     @Override
@@ -23,7 +22,7 @@ public class PlayerMapper implements RequestDtoMapper<PlayerRequestDto, Player>,
         player.setLastName(dto.getLastName());
         player.setCareerStartDate(dto.getCareerStartDate());
         player.setExperienceMonths(dto.getExperienceMonths());
-        player.setAge(dto.getAge());
+        player.setDateOfBirth(dto.getDateOfBirth());
         player.setTeam(teamService.get(dto.getTeamId()));
         return player;
     }
@@ -38,6 +37,7 @@ public class PlayerMapper implements RequestDtoMapper<PlayerRequestDto, Player>,
                 player.getId(),
                 player.getFirstName(),
                 player.getLastName(),
+                player.getDateOfBirth(),
                 player.getCareerStartDate(),
                 player.getExperienceMonths(),
                 player.getAge(),

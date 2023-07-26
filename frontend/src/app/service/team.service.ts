@@ -10,7 +10,7 @@ import {PlayerResponse} from "../model/player.model";
   providedIn: 'root'
 })
 export class TeamService {
-  private baseUrl = 'http://localhost:6867/teams';
+  private baseUrl = 'http://localhost:8081/teams';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })

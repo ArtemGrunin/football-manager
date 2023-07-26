@@ -50,8 +50,8 @@
   <input placeholder="careerStartDate" [(ngModel)]="newPlayer.careerStartDate" type="date">
   <div>Experience, months</div>
   <input placeholder="experienceMonths" [(ngModel)]="newPlayer.experienceMonths" type="number">
-  <div>Age</div>
-  <input placeholder="age" [(ngModel)]="newPlayer.age" type="number">
+  <div>Date Of Birth</div>
+  <input placeholder="dateOfBirth" [(ngModel)]="newPlayer.dateOfBirth" type="date">
   <div>Team</div>
   <select [(ngModel)]="newPlayer.teamId">
     <option *ngFor="let team of teams" [value]="team.id">{{ team.name }}</option>

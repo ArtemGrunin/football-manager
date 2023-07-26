@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { PlayerService } from '../service/player.service';
 import { TeamService } from '../service/team.service';
-import { PlayerResponse } from '../model/player.model';
+import { PlayerResponse, PlayerRequest } from '../model/player.model'; // Imported PlayerRequest
 import { TeamResponse } from '../model/team.model';
-import {FormControl, FormGroup} from "@angular/forms";
+import { FormControl, FormGroup } from "@angular/forms";
 
 @Component({
   selector: 'app-player-details',
@@ -17,6 +17,7 @@ export class PlayerDetailsComponent implements OnInit {
   player: PlayerResponse = {} as PlayerResponse;
   originalPlayer: PlayerResponse = {} as PlayerResponse;
   editedCareerStartDate: string = '';
+  editedDateOfBirth: string = '';
   teams: TeamResponse[] = [];
   page: number = 0;
   size: number = 100;
@@ -65,7 +66,7 @@ export class PlayerDetailsComponent implements OnInit {
         .subscribe({
           next: () => {
             alert('Player has been transferred successfully!');
-            this.getPlayer();  // update the player information after transfer
+            this.getPlayer();
           },
           error: err => {
             console.error('There was an error transferring the player', err);
@@ -76,17 +77,15 @@ export class PlayerDetailsComponent implements OnInit {
     }
   }
 
-
   getTeamName(teamId: number): string {
     const team = this.teams.find(team => team.id === teamId);
     return team ? team.name : 'Unknown';
   }
 
   save(): void {
-    this.player.careerStartDate = new Date(this.editedCareerStartDate);
     this.playerService.updatePlayer(this.player.id, this.player).subscribe({
-      next: updatedPlayer => {
-        this.player = updatedPlayer;
+      next: updatedPlayerResponse => {
+        this.player = updatedPlayerResponse;
         this.editMode = false;
       },
       error: error => {
