@@ -19,7 +19,6 @@ football-manager-api/data
 *.iws
 *.iml
 *.ipr
-.env
 
 ### NetBeans ###
 /nbproject/private/
